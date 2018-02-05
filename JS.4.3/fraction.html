@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment JS.4.3 Objects</title>
+    <script src="1.js"></script>>
+</head>
+<body>
+
+<p><h2>Assignment JS.4.3 Objects</h2></p>
+
+<form id="myForm" action="fraction.html">
+    Input 1 Numerator:
+    <br>
+    <input type="number" id="numerator">
+    <br><br>
+    Input 1 Denominator:
+    <br>
+    <input type="number" id="denominator">
+    <br><br>
+    Input 2 Numerator:
+    <br>
+    <input type="number" name="numerator2">
+    <br><br>
+    Input 2 Denominator:
+    <br>
+    <input type="number" name=" denominator2">
+    <br><br>
+</form>
+
+<button onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+
+
+    function myFunction() {
+
+        /** 1. create object Rational*/
+        let st1 = Object.create(rational);
+
+        st1.setNumerator(document.getElementById("myForm").elements[0].value); //set value for numerator property from from
+        st1.setDenominator(document.getElementById("myForm").elements[1].value); //set value for denominator property from from
+
+        console.log(st1.toString());    //print fraction in console from toString in 1.js
+
+        /** 2. If the caller does not provide parameters, the function should create the fraction 0/1. */
+        let x = document.getElementById("myForm").elements[0].value; //create 2 variables to easier work with
+        let y = document.getElementById("myForm").elements[1].value;
+
+        if (x === null) {
+            x = 0;
+        }
+
+        console.log(st1.toString());    //print fraction in console from toString in 1.js
+
+        document.getElementById("demo").innerHTML = "1: " + st1.toString(); //print fraction on screen from toString in 1.js
+        document.getElementById("demo").innerHTML = "1: " + x + "/" + y; //print fraction on screen from toString in 1.js
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

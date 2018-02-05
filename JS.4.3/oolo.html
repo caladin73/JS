@@ -1,0 +1,40 @@
+<!doctype html>
+<html language="en">
+<!-- nmlPersonOO1.html -->
+<head>
+    <meta charset="utf-8"/>
+    <title>Objects, OLOO</title>
+    <script src="nmlPersonOLOO.js"></script>
+</head>
+<body>
+<h1>OLOO Example</h1>
+<p>
+    Create a Person object from a prototype using
+    the OLOO Pattern.
+    Add a couple of methods and demonstrate usage.
+</p>
+<p>
+    Please press Ctrl->I to read the concole log.
+<div>
+    <script>
+        let st1 = Object.create(Person);    // create three objs
+        let st2 = Object.create(Person);    // with Person
+        let st3 = Object.create(Person);    // as prototype
+
+        st1.init('Adelaide', 32, 56, 'F');  // give st1 state
+        console.log(st1.toString());        // print it
+        st1.setName('Beatrice');            // test setter
+        console.log(st1.toString());        // print again
+
+        st2.init('Archibald', 27, 99, 'M'); // give st2 state
+        console.log(st2.toString());        // print it
+        st2.setWeight(88.3);                // test setter
+        console.log(st2.toString());        // print again
+
+        st3.init('Charlotte', 32, 56, 'F'); // give st3 state
+        st3.setName('Delia');               // test setter
+        console.log(st3);                   // print object
+    </script>
+</div>
+</body>
+</html>
