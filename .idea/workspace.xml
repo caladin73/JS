@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="94bbb152-a225-4279-8310-e8bf731c474a" name="Default" comment="" />
+    <list default="true" id="94bbb152-a225-4279-8310-e8bf731c474a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS.4.3/2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS.4.3/gcd.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS.4.3/hej.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JS.4.3/test.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JS.4.3/oolo.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS.4.3/1.js" afterPath="$PROJECT_DIR$/JS.4.3/1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/JS.4.3/fraction.html" afterPath="$PROJECT_DIR$/JS.4.3/fraction.html" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,11 +21,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="fraction.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="fraction.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JS.4.3/fraction.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="954">
-              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state relative-caret-position="738">
+              <caret line="65" column="68" lean-forward="false" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/JS.4.3/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="468">
+              <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hej.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS.4.3/hej.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -24,21 +54,49 @@
       <file leaf-file-name="1.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/JS.4.3/1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="33" column="2" lean-forward="true" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
+            <state relative-caret-position="828">
+              <caret line="46" column="2" lean-forward="false" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <marker date="1517946150501" expanded="true" signature="0:29" ph="/*...*/" />
+                <marker date="1517946150501" expanded="true" signature="45:85" ph="/** OOLO fraction rational object ...*/" />
+                <marker date="1517946150501" expanded="true" signature="102:937" ph="{...}" />
+                <marker date="1517946150501" expanded="true" signature="149:232" ph="{...}" />
+                <marker date="1517946150501" expanded="true" signature="265:303" ph="{...}" />
+                <marker date="1517946150501" expanded="true" signature="345:388" ph="{...}" />
+                <marker date="1517946150501" expanded="true" signature="423:463" ph="{...}" />
+                <marker date="1517946150501" expanded="true" signature="509:556" ph="{...}" />
+                <marker date="1517946150501" expanded="true" signature="585:677" ph="{...}" />
+                <marker date="1517946150501" expanded="true" signature="727:818" ph="{...}" />
+                <marker date="1517946150501" expanded="true" signature="846:932" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="oolo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JS.4.3/oolo.html">
+      <file leaf-file-name="2.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS.4.3/2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
-              <folding />
+            <state relative-caret-position="306">
+              <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+              <folding>
+                <marker date="1517913937862" expanded="true" signature="25:249" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gcd.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/JS.4.3/gcd.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="35" selection-end-column="1" />
+              <folding>
+                <marker date="1517946386256" expanded="true" signature="0:578" ph="/** The world's oldest non trivial algorithm: ...*/" />
+                <marker date="1517946386256" expanded="true" signature="580:786" ph="/** Euclid's algorithm ...*/" />
+                <marker date="1517946386256" expanded="true" signature="815:903" ph="{...}" />
+                <marker date="1517946386256" expanded="true" signature="833:858" ph="{...}" />
+                <marker date="1517946386256" expanded="true" signature="864:901" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,9 +105,17 @@
         <entry file="file://$PROJECT_DIR$/JS.4.3/nmlPersonOLOO.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="630">
-              <caret line="35" column="2" lean-forward="true" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
+              <caret line="35" column="2" lean-forward="false" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
+                <marker date="1517848374816" expanded="true" signature="0:29" ph="/*...*/" />
+                <marker date="1517848374816" expanded="true" signature="45:74" ph="/** OOLO Person object ...*/" />
+                <marker date="1517848374816" expanded="true" signature="89:681" ph="{...}" />
+                <marker date="1517848374816" expanded="true" signature="135:246" ph="{...}" />
+                <marker date="1517848374816" expanded="true" signature="274:307" ph="{...}" />
+                <marker date="1517848374816" expanded="true" signature="339:372" ph="{...}" />
+                <marker date="1517848374816" expanded="true" signature="403:435" ph="{...}" />
+                <marker date="1517848374816" expanded="true" signature="464:679" ph="{...}" />
+                <marker date="1517848374816" expanded="true" signature="560:655" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -65,15 +131,26 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/t.html" />
         <option value="$PROJECT_DIR$/JS.4.3/1.html" />
-        <option value="$PROJECT_DIR$/JS.4.3/1.js" />
         <option value="$PROJECT_DIR$/JS.4.3/oolo.html" />
         <option value="$PROJECT_DIR$/JS.4.3/nmlPersonOLOO.js" />
+        <option value="$PROJECT_DIR$/JS.4.3/2.js" />
+        <option value="$PROJECT_DIR$/JS.4.3/1.js" />
+        <option value="$PROJECT_DIR$/JS.4.3/gcd.js" />
         <option value="$PROJECT_DIR$/JS.4.3/fraction.html" />
+        <option value="$PROJECT_DIR$/JS.4.3/test.js" />
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/hej.html" />
+        <option value="$PROJECT_DIR$/JS.4.3/hej.html" />
+        <option value="$PROJECT_DIR$/JS.4.3/hej.js" />
+        <option value="$PROJECT_DIR$/JS.4.3/test.html" />
       </list>
     </option>
   </component>
@@ -85,11 +162,12 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1166" />
-    <option name="y" value="1" />
-    <option name="width" value="1401" />
-    <option name="height" value="1577" />
+    <option name="x" value="767" />
+    <option name="y" value="4" />
+    <option name="width" value="1792" />
+    <option name="height" value="1562" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -131,6 +209,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../JS.2.6" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Assigments\JS.4.3" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -155,25 +238,25 @@
       <updated>1517410917130</updated>
       <workItem from="1517410918993" duration="1226000" />
       <workItem from="1517744312450" duration="79000" />
-      <workItem from="1517832688027" duration="13830000" />
+      <workItem from="1517832688027" duration="46521000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15135000" />
+    <option name="totallyTimeSpent" value="47826000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1166" y="1" width="1401" height="1577" extended-state="0" />
+    <frame x="767" y="4" width="1792" height="1562" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17598806" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1426097" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3386537" sideWeight="0.5024356" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3386537" sideWeight="0.49756438" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24982603" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296322" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -223,9 +306,17 @@
     <entry file="file://$PROJECT_DIR$/JS.4.3/nmlPersonOLOO.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
-          <caret line="35" column="2" lean-forward="true" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
+          <caret line="35" column="2" lean-forward="false" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <marker date="1517848374816" expanded="true" signature="0:29" ph="/*...*/" />
+            <marker date="1517848374816" expanded="true" signature="45:74" ph="/** OOLO Person object ...*/" />
+            <marker date="1517848374816" expanded="true" signature="89:681" ph="{...}" />
+            <marker date="1517848374816" expanded="true" signature="135:246" ph="{...}" />
+            <marker date="1517848374816" expanded="true" signature="274:307" ph="{...}" />
+            <marker date="1517848374816" expanded="true" signature="339:372" ph="{...}" />
+            <marker date="1517848374816" expanded="true" signature="403:435" ph="{...}" />
+            <marker date="1517848374816" expanded="true" signature="464:679" ph="{...}" />
+            <marker date="1517848374816" expanded="true" signature="560:655" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -238,20 +329,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/JS.4.3/2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+          <folding>
+            <marker date="1517913937862" expanded="true" signature="25:249" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS.4.3/gcd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="35" selection-end-column="1" />
+          <folding>
+            <marker date="1517946386256" expanded="true" signature="0:578" ph="/** The world's oldest non trivial algorithm: ...*/" />
+            <marker date="1517946386256" expanded="true" signature="580:786" ph="/** Euclid's algorithm ...*/" />
+            <marker date="1517946386256" expanded="true" signature="815:903" ph="{...}" />
+            <marker date="1517946386256" expanded="true" signature="833:858" ph="{...}" />
+            <marker date="1517946386256" expanded="true" signature="864:901" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/JS.4.3/1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="2" lean-forward="true" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
+        <state relative-caret-position="828">
+          <caret line="46" column="2" lean-forward="false" selection-start-line="46" selection-start-column="2" selection-end-line="46" selection-end-column="2" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <marker date="1517946150501" expanded="true" signature="0:29" ph="/*...*/" />
+            <marker date="1517946150501" expanded="true" signature="45:85" ph="/** OOLO fraction rational object ...*/" />
+            <marker date="1517946150501" expanded="true" signature="102:937" ph="{...}" />
+            <marker date="1517946150501" expanded="true" signature="149:232" ph="{...}" />
+            <marker date="1517946150501" expanded="true" signature="265:303" ph="{...}" />
+            <marker date="1517946150501" expanded="true" signature="345:388" ph="{...}" />
+            <marker date="1517946150501" expanded="true" signature="423:463" ph="{...}" />
+            <marker date="1517946150501" expanded="true" signature="509:556" ph="{...}" />
+            <marker date="1517946150501" expanded="true" signature="585:677" ph="{...}" />
+            <marker date="1517946150501" expanded="true" signature="727:818" ph="{...}" />
+            <marker date="1517946150501" expanded="true" signature="846:932" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS.4.3/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1044">
+          <caret line="58" column="7" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="58" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS.4.3/hej.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/JS.4.3/fraction.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="954">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        <state relative-caret-position="738">
+          <caret line="65" column="68" lean-forward="false" selection-start-line="65" selection-start-column="8" selection-end-line="65" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS.4.3/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="24" lean-forward="true" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
           <folding />
         </state>
       </provider>

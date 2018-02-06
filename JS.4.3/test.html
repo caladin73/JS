@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+<p id="demo"></p>
+
+
+<form id="myForm" action="fraction.html">
+    Input 1 Numerator:
+    <br>
+    <input type="number" id="numerator">
+    <br><br>
+    Input 1 Denominator:
+    <br>
+    <input type="number" id="denominator">
+    <br><br>
+    Input 2 Numerator:
+    <br>
+    <input type="number" name="numerator2">
+    <br><br>
+    Input 2 Denominator:
+    <br>
+    <input type="number" name=" denominator2">
+    <br><br>
+</form>
+
+
+<button onclick="FractionReduce.reduce()">1. Create object "Rationel" from the input form.</button>
+
+<script>
+
+    let numerator = document.getElementById("myForm").elements[0].value;
+    let denominator = document.getElementById("myForm").elements[1].value;
+
+    var FractionReduce = (function(){
+        //Euclid's Algorithm
+        var getGCD = function(n, d){
+            var numerator = (n<d)?n:d;
+            var denominator = (n<d)?d:n;
+            var remainder = numerator;
+            var lastRemainder = numerator;
+
+            while (true){
+                lastRemainder = remainder;
+                remainder = denominator % numerator;
+                if (remainder === 0){
+                    break;
+                }
+                denominator = numerator;
+                numerator = remainder;
+            }
+            if(lastRemainder){
+                return lastRemainder;
+            }
+        };
+
+        var reduce = function(n, d){
+            var gcd = getGCD(n, d);
+
+            return [n/gcd, d/gcd];
+        };
+
+        return {
+            getGCD:getGCD,
+            reduce:reduce
+        };
+
+    }());
+
+    //alert(FractionReduce.reduce(3413358, 13427));
+    console.log(FractionReduce.reduce());
+
+
+
+
+</script>
+</body>
+</html>

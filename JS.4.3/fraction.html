@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Assignment JS.4.3 Objects</title>
     <script src="1.js"></script>>
+    <script src="gcd.js"></script>>
 </head>
 <body>
 
@@ -28,45 +29,121 @@
     <br><br>
 </form>
 
-<button onclick="myFunction()">Submit</button>
+<p>See Konsol for futhere code! Ctrl+Shiht+i or F12!</p>
 
+<button onclick="Function1()">1. Create object "Rationel" from the input form.</button>
+<br>
+<button onclick="Function2()">2. Create the fraction 0/1 if numerator or denominator is not set!.</button>
+<br>
+<button onclick="Function3()">3. Using toString() method to print.</button>
+<br>
+<button onclick="Function4()">4. Negate by multiply with -1</button>
+<br>
+<button onclick="Function5()">5. Invert, swapping the numerator and the denominator</button>
+<br>
+<button onclick="Function6()">6. toFloat, fraction to decimal</button>
+<br>
+<button onclick="Function7()">7. reduce</button>
+<br>
+<button onclick="Function8()">8. add, sub, mul, and div</button>
 <p id="demo"></p>
 
 <script>
 
 
-    function myFunction() {
 
-        /** 1. create object Rational*/
+    /** 1. create object Rational from form input form */
+    function Function1() {
         let st1 = Object.create(rational);
+        st1.setNumerator(document.getElementById("myForm").elements[0].value); //set value for numerator property from from
+        st1.setDenominator(document.getElementById("myForm").elements[1].value); //set value for denominator property from from
+        console.log(st1);
+    }
 
+    /** 2. Create the fraction 0/1 if numerator or denominator is not set! */
+    function Function2() {
+        let st1 = Object.create(rational);
+        let x = document.getElementById("myForm").elements[0].value; //create 2 variables to easier work with
+        let y = document.getElementById("myForm").elements[1].value;
+        if (x === "" || y === "") {
+            x = 0;
+            y = 1;
+            st1.setNumerator(0); //set value for numerator property from from
+            st1.setDenominator(1); //set value for denominator property from from
+        } else {
+            st1.setNumerator(document.getElementById("myForm").elements[0].value); //set value for numerator property from from
+            st1.setDenominator(document.getElementById("myForm").elements[1].value); //set value for denominator property from from
+        }
+        console.log(st1);
+    }
+
+    /** 3. Using toString() method to print, see 1.js.*/
+    function Function3() {
+        let st1 = Object.create(rational);
+        st1.setNumerator(document.getElementById("myForm").elements[0].value); //set value for numerator property from from
+        st1.setDenominator(document.getElementById("myForm").elements[1].value); //set value for denominator property from from
+        console.log(st1.toString());    //print fraction in console from toString in 1.js
+        document.getElementById("demo").innerHTML = "3: " + st1.toString(); //print fraction on screen from toString in 1.js
+    }
+
+    /** 4. Using toString() method to print, see 1.js.*/
+    function Function4() {
+        let st1 = Object.create(rational);
+        st1.setNumerator(document.getElementById("myForm").elements[0].value); //set value for numerator property from from
+        st1.setDenominator(document.getElementById("myForm").elements[1].value); //set value for denominator property from from
+        let x = document.getElementById("myForm").elements[0].value; //create 2 variables to easier work with
+        let y = document.getElementById("myForm").elements[1].value;
+        console.log("-" + st1.toString());    //print fraction in console from toString in 1.js
+        document.getElementById("demo").innerHTML = "4: " + "-" + (x + "/" + y); //print fraction on screen from toString in 1.js
+    }
+
+    /** 5. Invert, swapping the numerator and the denominator */
+    function Function5() {
+        let st1 = Object.create(rational);
+        st1.setNumerator(document.getElementById("myForm").elements[1].value); //set value for numerator property from from
+        st1.setDenominator(document.getElementById("myForm").elements[0].value); //set value for denominator property from from
+        console.log(st1);
+        document.getElementById("demo").innerHTML = "5: " + st1.toString(); //print fraction on screen from toString in 1.js
+        //document.getElementById("demo").innerHTML = "5: " + st1.invert(); //print fraction on screen from toString in 1.js
+    }
+
+    /** 6. toFloat, fraction to decimal */
+    function Function6() {
+        let st1 = Object.create(rational);
+        st1.setNumerator(document.getElementById("myForm").elements[0].value); //set value for numerator property from from
+        st1.setDenominator(document.getElementById("myForm").elements[1].value); //set value for denominator property from from
+        let x = document.getElementById("myForm").elements[0].value; //create 2 variables to easier work with
+        let y = document.getElementById("myForm").elements[1].value;
+        console.log(st1.toFloat());    //print fraction in console from toString in 1.js
+        document.getElementById("demo").innerHTML = "6: " + (x/y); //print fraction on screen from toString in 1.js
+    }
+
+    /** 7. reduce */
+    function Function7() {
+        let st1 = Object.create(rational);
         st1.setNumerator(document.getElementById("myForm").elements[0].value); //set value for numerator property from from
         st1.setDenominator(document.getElementById("myForm").elements[1].value); //set value for denominator property from from
 
-        console.log(st1.toString());    //print fraction in console from toString in 1.js
-
-        /** 2. If the caller does not provide parameters, the function should create the fraction 0/1. */
         let x = document.getElementById("myForm").elements[0].value; //create 2 variables to easier work with
         let y = document.getElementById("myForm").elements[1].value;
 
-        if (x === null) {
-            x = 0;
-        }
-
-        console.log(st1.toString());    //print fraction in console from toString in 1.js
-
-        document.getElementById("demo").innerHTML = "1: " + st1.toString(); //print fraction on screen from toString in 1.js
-        document.getElementById("demo").innerHTML = "1: " + x + "/" + y; //print fraction on screen from toString in 1.js
+            if (y == 0) {
+                return x;
+            } else {
+                return Function7(y, x % y);
+            }
 
 
-
-
-
-
-
-
-
+        console.log();
+        //document.getElementById("demo").innerHTML = x;
     }
+
+
+
+
+
+
+
 
 
 

@@ -30,5 +30,18 @@ let rational = {
     toString: function () {
         let s = this.getNumerator() + "/" + this.getDenominator();
         return s;
+    },
+
+    invert: function (numerator,  denominator) {
+            this.numerator = denominator;
+            this.denominator = numerator;
+    },
+
+    toFloat: function () {
+        let f = this.getNumerator() / this.getDenominator();
+        return f;
     }
+
+
+
 };
