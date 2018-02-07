@@ -12,31 +12,20 @@
 
 
 <form id="myForm" action="fraction.html">
-    Input 1 Numerator:
+    Numerator:
     <br>
     <input type="number" id="numerator">
     <br><br>
-    Input 1 Denominator:
+    Denominator:
     <br>
     <input type="number" id="denominator">
     <br><br>
-    Input 2 Numerator:
-    <br>
-    <input type="number" name="numerator2">
-    <br><br>
-    Input 2 Denominator:
-    <br>
-    <input type="number" name=" denominator2">
-    <br><br>
 </form>
-
 
 <button onclick="FractionReduce.reduce()">1. Create object "Rationel" from the input form.</button>
 
 <script>
 
-    let numerator = document.getElementById("myForm").elements[0].value;
-    let denominator = document.getElementById("myForm").elements[1].value;
 
     var FractionReduce = (function(){
         //Euclid's Algorithm
@@ -74,7 +63,7 @@
     }());
 
     //alert(FractionReduce.reduce(3413358, 13427));
-    console.log(FractionReduce.reduce());
+    console.log(FractionReduce.reduce(6454,645454));
 
 
 
