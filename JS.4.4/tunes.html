@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS4.4</title>
+    <script src="tune.js"></script>
+</head>
+<body>
+<p><h2>Assignment JS.4.4 Objects and Array</h2></p>
+
+
+<p><h2>Enter tune information</h2></p>
+
+<form id="myForm" action="tunes.html">
+    Title:<br>
+    <input type="text" name="title" value="">
+    <br>
+    Composer:<br>
+    <input type="text" name="composer" value="">
+    <br>
+    Year:<br>
+    <input type="date" name="year" value="">
+    <br>
+    Performers:<br>
+    <input type="text" name="performers" value="">
+    <br><br>
+</form>
+
+<br>
+<button onclick="myFunction()">Submit</button>
+<br>
+
+<p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myForm").submit();
+
+            let st1 = Object.create(Tune);
+            st1.setTitle(document.getElementById("myForm").elements[0].value);
+            st1.setComposer(document.getElementById("myForm").elements[1].value);
+            st1.setYear(document.getElementById("myForm").elements[2].value);
+            st1.setPerformers(document.getElementById("myForm").elements[3].value);
+
+
+            function returnValues(st1) {
+                var arr = [];
+                for (var key in st1)
+                    arr.push(st1[key]);
+                return arr;
+            }
+
+            console.log();
+
+        }
+
+    </script>
+
+
+
+</body>
+</html>

@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>7. Reduce</title>
 </head>
-<body>
+<p>
+
+<p><h2>JS.4.3, (7) Reduce fraction</h2></p>
 
 <form id="myForm" action="fraction.html">
     Numerator:
@@ -19,8 +21,12 @@
 
 <br>
 
+<button onclick="getElementById('demo').innerHTML=reduce(); console.log(reduce())">Reduce</button>
+
 <br>
-<p id=demo>click me</p>
+
+<p id=demo></p>
+
 <script>
 
         // Reduce a fraction by finding the Greatest Common Divisor and dividing by it.
@@ -33,13 +39,6 @@
             gcd = gcd(n,d);
             return [n/gcd + "/" + d/gcd];
         }
-
-        //console.log(reduce());
-        //document.getElementById("demo").innerHTML = reduce();
-
-        document.getElementById("demo").addEventListener("click", reduce)
-
-        //document.getElementById("demo").onclick = function() {reduce()};
 
 </script>
 

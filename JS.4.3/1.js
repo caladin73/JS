@@ -40,8 +40,16 @@ let rational = {
     toFloat: function () {
         let f = this.getNumerator() / this.getDenominator();
         return f;
-    }
+    },
 
+    /*
+    reduce function(){
+    var gcd = function gcd(a,b){
+        return b ? gcd(b, a%b) : a;
+    };
 
+        gcd = gcd(n,d);
+        return [n/gcd + "/" + d/gcd];
+*/
 
 };
