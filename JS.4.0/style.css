@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.column1 {
+    float: left;
+    margin-right: 100px;
+    width: 600px;
+    height: 800px;
+}
+
+.column2 {
+    float: left;
+    width: 400px;
+    height: 400px;
+}
+
+.row {
+    margin-left: 50px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
