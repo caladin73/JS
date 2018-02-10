@@ -6,26 +6,17 @@ body {
     margin: 0;
 }
 
-.column1 {
-    float: left;
-    margin-right: 100px;
-    margin-bottom: 50px;
-    width: 600px;
-    height: 800px;
+.createNewRoom {
+    margin: 0 auto;
+}
+.enterRoomHeight, .enterRoomWidth {
+    width: 50px;
+    text-align: center;
+}
+.canvasDesign {
+    border: 2px solid black;
+    width: 0px;
+    height: 0px;
 }
 
-.column2 {
-    float: left;
-    width: 400px;
-    height: 400px;
-}
 
-.row {
-    margin-left: 40px;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}

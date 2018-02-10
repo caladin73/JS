@@ -1,23 +1,31 @@
-/*globals document, window */
-'use strict';
+var createNewRoom = document.getElementById("createNewRoom");
+var resetCreateNewRoom = document.getElementById("resetCreateNewRoom");
+var userInputWindow = document.getElementById("userInputWindow");
+var enterRoomHeight = document.getElementById("enterRoomHeight");
+var enterRoomWidth = document.getElementById("enterRoomWidth");
 
-let poly = function () {
-    let canvas = $('room');
-    if (canvas.getContext) {
-        var ctx = canvas.getContext('2d');
 
-        ctx.beginPath();        // new path
-        ctx.moveTo(50, 200);    // goto coordinate in canvas
-        ctx.lineTo(150, 50);    // line to coordinate
-        ctx.lineTo(180, 150);   // another line to coord
-        ctx.lineTo(50, 200);    // close poly
-        ctx.fillStyle = 'silver';
-        ctx.strokeStyle = 'black';
-        ctx.lineWidth = 10;
-        ctx.fill();             // fills poly
-        ctx.closePath();        // close path
-        ctx.stroke();           // draws lines
-    }
+
+
+function createNewCanvass() {
+
+    document.body.removeChild(userInputWindow);
+
+    var enterRoomHeightt = enterRoomHeight.value;
+    var enterRoomWidthh = enterRoomWidth.value;
+    document.body.innerHTML = enterRoomHeightt+":"+enterRoomWidthh;
+
+    var newCanvas = document.createElement("canvas");
+
+    newCanvas.classList.add("canvasDesign");
+
+    newCanvas.style.height = enterRoomHeightt+"px";
+    newCanvas.style.width = enterRoomWidthh+"px";
+
+
+    document.body.appendChild(newCanvas);
+
+
 }
 
-window.addEventListener('load', poly);
+createNewRoom.addEventListener('click', createNewCanvass);
