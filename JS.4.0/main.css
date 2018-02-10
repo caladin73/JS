@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+    background-color: rgb(46, 45, 45);
+    color: rgb(255, 255, 255);
+}
+.createNewCanvas {
+    margin: 0 auto;
+    background-color: #fff;
+    background-color: rgba(80, 80, 80, 0.7);
+
+    width: 300px;
+}
+.enterCanvasHeight, .enterCanvasWidth {
+    width: 50px;
+    text-align: center;
+}
+.canvasDesign {
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+}
