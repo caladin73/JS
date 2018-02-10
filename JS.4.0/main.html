@@ -9,15 +9,17 @@
 
 <body>
 <header>
-    <h2>Canvas</h2>
     <menu></menu>
 </header>
 <div class="createNewCanvas" id="userInputWindow">
     Please enter the size of your canvas in pixels(px) and then click "create"<br><br>
     <form>
-        <input type="number" id="enterCanvasHeight" placeholder="height"> : <input type="number" id="enterCanvasWidth" placeholder="width"><br><br>
-        <input type="button" value="Create" id="createNewCanvas">
-        <input type="button" value="Reset" id="resetCreateNewCanvas"><br>
+        <input type="number" id="enterCanvasWidth" value="500"> Width
+        <br>
+        <input type="number" id="enterCanvasHeight" value="600"> Height
+        <br><br>
+        <input type="button" value="Create" id="createNewCanvas" >
+        <input type="button" value="Reset" onClick="window.location.reload()"><br>
     </form>
 </div>
 

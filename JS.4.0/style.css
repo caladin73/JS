@@ -3,20 +3,33 @@
 }
 
 body {
-    margin: 0;
+    margin: 20px;
+}
+
+.column1 {
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    width: 600px;
+    height: 800px;
+}
+
+.column2 {
+    float: left;
+    width: 400px;
+    height: 400px;
 }
 
 .createNewRoom {
-    margin: 0 auto;
-}
-.enterRoomHeight, .enterRoomWidth {
-    width: 50px;
-    text-align: center;
-}
-.canvasDesign {
-    border: 2px solid black;
-    width: 0px;
-    height: 0px;
+    margin-left: 0px;
 }
 
+.createNewRoom:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
+.room {
+    outline: 1px solid magenta;
+}
