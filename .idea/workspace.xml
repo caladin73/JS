@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="544ea597-0f26-4f12-9a38-72936d28041f" name="Default" comment="">
+<<<<<<< HEAD
       <change beforePath="" afterPath="$PROJECT_DIR$/JS.4.0/createNewCanvas.js" />
       <change beforePath="" afterPath="$PROJECT_DIR$/JS.4.0/main.css" />
       <change beforePath="" afterPath="$PROJECT_DIR$/JS.4.0/main.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/JS.4.0/page.html" afterPath="$PROJECT_DIR$/JS.4.0/page.html" />
       <change beforePath="$PROJECT_DIR$/JS.4.0/style.css" afterPath="$PROJECT_DIR$/JS.4.0/style.css" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> be4469f589b37aad7df93c24f77ff83bd4d5a5d2
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -229,13 +233,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518155771458</updated>
+<<<<<<< HEAD
       <workItem from="1518155773316" duration="6740000" />
       <workItem from="1518204305800" duration="2515000" />
+=======
+      <workItem from="1518155773316" duration="6927000" />
+>>>>>>> be4469f589b37aad7df93c24f77ff83bd4d5a5d2
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="9255000" />
+=======
+    <option name="totallyTimeSpent" value="6927000" />
+>>>>>>> be4469f589b37aad7df93c24f77ff83bd4d5a5d2
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-1" width="1054" height="1100" extended-state="0" />
