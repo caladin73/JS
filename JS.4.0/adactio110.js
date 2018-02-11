@@ -9,14 +9,19 @@ let create_canvas = function () {
     var x = document.getElementById("myForm").elements[0].value;
     var y = document.getElementById("myForm").elements[1].value;
 
-        document.getElementById("demo").innerHTML = "Room" + "<br>" +
-            "<canvas id=\"room\" width=\"" + x + "\" height=\"" + y + "\"\n" +
-            "    style=\"outline: 1px solid magenta;\">\n" +
-            "</canvas>" + "\n" +
-            "\n" +
-            "<canvas id=\"toolbox\" width=\"400\" height=\"400\"\n" +
-            "    style=\"outline: 1px solid magenta;\">\n" +
-            "</canvas>"
+        document.getElementById("demo").innerHTML = "" +
+            "<div class='row'>" +
+                "<div class='column'>" +
+                    "Room<br><canvas id=\"room\" width=\"" + x + "\" height=\"" + y + "\"\n" +
+                    "    style=\"outline: 1px solid magenta;\">\n" +
+                    "</canvas>" + "\n" +
+                "</div>" +
+                "<div class='column'>" +
+                    "ToolBox<br><canvas id=\"toolbox\" width=\"400\" height=\"400\"\n" +
+                    "    style=\"outline: 1px solid magenta;\">\n" +
+                    "</canvas>" +
+                "</div>" +
+            "</div>"
 
     let canvas = $('toolbox');
     var ctx = canvas.getContext('2d');
