@@ -1,5 +1,3 @@
-
-
 /*globals document, window */
 'use strict';
 
