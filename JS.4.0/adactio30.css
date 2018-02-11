@@ -1,0 +1,25 @@
+p {
+    color: yellow;
+    font-family: "arial", sans-serif;
+    font-size: 1.2em;
+}
+
+body {
+    color: white;
+    background-color: black;
+}
+
+canvas {
+    margin-right: 40px;
+}
+
+#purchases {
+    border: 1px solid white;
+    background-color: #333;
+    color: #ccc;
+    padding: 1em;
+}
+footer {
+    position: absolute;
+    bottom: 3px;
+}
