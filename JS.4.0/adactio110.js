@@ -5,11 +5,13 @@
  * adactio110.js
  */
 
-let create_canvas = function () {
+//let create_canvas = function () {
 
-    var i = document.getElementById("room").style.width;
+let initialize = function () {
 
-    if (i == 0) {
+    //var i = document.getElementById("room").style.width;
+
+    //if (i == 0) {
 
         var x = document.getElementById("myForm").elements[0].value;
         var y = document.getElementById("myForm").elements[1].value;
@@ -19,12 +21,12 @@ let create_canvas = function () {
 
         document.getElementById("toolbox").style.width = 400 + "px";
         document.getElementById("toolbox").style.height = 400 + "px";
-    }
+    
 
 
 
     let mycv = Object.create(Canvas);
-    mycv.init('toolbox');
+    mycv.init('myCanvas', 'transparent');
     mycv.canvas.addEventListener('click', hittest);
 
     let shape1 = Object.create(Shape);
@@ -60,4 +62,6 @@ let create_canvas = function () {
     */
 };
 
+let shapes = [];
 
+window.addEventListener('load', initialize);
