@@ -6,23 +6,40 @@
  */
 
 let create_canvas = function () {
-    var x = document.getElementById("myForm").elements[0].value;
-    var y = document.getElementById("myForm").elements[1].value;
 
-        document.getElementById("demo").innerHTML = "" +
-            "<div class='row'>" +
-                "<div class='column'>" +
-                    "Room<br><canvas id=\"room\" width=\"" + x + "\" height=\"" + y + "\"\n" +
-                    "    style=\"outline: 1px solid magenta;\">\n" +
-                    "</canvas>" + "\n" +
-                "</div>" +
-                "<div class='column'>" +
-                    "ToolBox<br><canvas id=\"toolbox\" width=\"400\" height=\"400\"\n" +
-                    "    style=\"outline: 1px solid magenta;\">\n" +
-                    "</canvas>" +
-                "</div>" +
-            "</div>"
+    var i = document.getElementById("room").style.width;
 
+    if ( i == 0) {
+
+        var x = document.getElementById("myForm").elements[0].value;
+        var y = document.getElementById("myForm").elements[1].value;
+
+        document.getElementById("room").style.width = x + "px";
+        document.getElementById("room").style.height = y + "px";
+
+        document.getElementById("toolbox").style.width = 400 + "px";
+        document.getElementById("toolbox").style.height = 400 + "px";
+
+    }
+
+
+/*
+        let mycv = Object.create(Canvas);
+        mycv.init('toolbox');
+        mycv.canvas.addEventListener('click', hittest);
+
+        let shape1 = Object.create(Shape);
+        shape1.init(mycv, 20, 10, 120, 40, 'blue');
+
+        shapes.push(shape1);
+        repeater(mycv, shapes);
+
+
+
+
+
+*/
+    /*
     let canvas = $('toolbox');
     var ctx = canvas.getContext('2d');
 
@@ -43,4 +60,6 @@ let create_canvas = function () {
     ctx.fillStyle = "yellow";         // set fill color
     ctx.fill();                     // fill the path
     ctx.stroke();                   // draw circumference
+
+    */
 };
