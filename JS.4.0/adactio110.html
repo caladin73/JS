@@ -8,16 +8,16 @@
     <script src="nQuery.js"></script>
     <script src="nmlCanvas.js"></script>
     <script src="nmlShape.js"></script>
+    <script src="create_canvas.js"></script>
 
 </head>
 <body>
 <h1>Assignment JS 4.0</h1>
 <h2>Input width and height in pixel</h2>
 
-<form id="myForm">
-    <input type="number" id="enterRoomWidth" placeholder="width" value="400">
-    <input type="number" id="enterRoomHeight" placeholder="height" value="600"><br><br>
-</form>
+
+<input type="number" id="height" value="400">
+<input type="number" id="width" value="600"><br><br>
 
 <button onclick="create_canvas()">Create Canvas</button>
 <button onClick="window.location.reload()">Reset</button>
@@ -28,7 +28,7 @@
         </canvas>
         </div>
     <div class="column">
-        <canvas id="toolbox" width="0" height="0" style="outline: 1px solid magenta;">
+        <canvas id="toolbox" width="400" height="400" style="outline: 1px solid magenta;">
         </canvas>
     </div>
 </div>
@@ -36,4 +36,5 @@
 <footer>
 </footer>
 </body>
+
 </html>

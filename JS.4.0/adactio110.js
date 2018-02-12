@@ -5,10 +5,10 @@
  * adactio110.js
  */
 
-let create_canvas = function () {
+function create_canvas () {
 
-    var x = document.getElementById("myForm").elements[0].value;
-    var y = document.getElementById("myForm").elements[1].value;
+    var x = document.getElementById("height").value;
+    var y = document.getElementById("width").value;
 
     document.getElementById("room").style.width = x + "px";
     document.getElementById("room").style.height = y + "px";
@@ -16,61 +16,41 @@ let create_canvas = function () {
     document.getElementById("toolbox").style.width = 400 + "px";
     document.getElementById("toolbox").style.height = 400 + "px";
 
-
     let initialize = function () {
-        let mycv = Object.create(Canvas);
-        mycv.init('toolbox', 'transparent');
-        mycv.canvas.addEventListener('click', hittest);
-        // create objects
-        // put in array
+        // create canvas object
+        let mycv0 = Object.create(Canvas);
+        mycv0.init('room');
+        let mycv1 = Object.create(Canvas);
+        mycv1.init('toolbox');
+        mycv1.prep();
         let shape1 = Object.create(Shape);
-        shape1.init(mycv, 20, 10, 120, 40, 'blue');
-        let shape2 = Object(Shape);
-        shape2.init(mycv, 200, 100, 80, 60, 'green');
+        shape1.init(mycv1, 20, 20, 140, 140, 'blue');
+        var shape2 = Object.create(Shape);
+        shape2.init(mycv1, 240, 20, 120, 120, 'green');
+        var shape3 = Object.create(Shape);
+        shape3.init(mycv1, 240, 180, 80, 80, 'red');
+        var shape4 = Object.create(Shape);
+        shape4.init(mycv1, 20, 180, 100, 100, 'yellow');
+        var shape5 = Object.create(Shape);
+        shape5.init(mycv1, 150, 150, 50, 0, Math.PI, 0, 'blue');
         shapes.push(shape1);
         shapes.push(shape2);
-        repeater(mycv, shapes);
+        shapes.push(shape3);
+        shapes.push(shape4);
+        shapes.push(shape5);
+        paint(mycv1, shapes);
     }
 
-    let redraw = function (cv, arr) {
-        cv.clear();
-        cv.prep();
-        // loop through array and draw
+    let paint = function (cv, arr) {
+        // loop through array of shapes and draw
         for (var i = 0; i < arr.length; i++) {
             arr[i].draw();
         }
     }
 
-    let repeater = function (cv, arr) {
-        // if this is an animation build a setInterval loop here
-        // if not, just draw
-        redraw(cv, arr);
-    }
-
-    let hittest = function (ev) {
-        for (let i = 0; i < shapes.length; i++) {
-            let cx = shapes[i].ctx;
-            cx.beginPath();
-            cx.rect(shapes[i].x, shapes[i].y, shapes[i].width, shapes[i].height);
-            cx.closePath();
-            let bb = this.getBoundingClientRect();    // canvas size and pos
-            // mouse to canvas coordinates
-            let x = (ev.clientX - bb.left) * (this.width / bb.width);
-            let y = (ev.clientY - bb.top) * (this.height / bb.height);
-            if (cx.isPointInPath(x, y)) {
-                cx.fillStyle = "yellow";
-                cx.fill();
-                // window.alert("hit: "+x+","+y);
-            } else {
-                // window.alert("nohit: "+x+","+y);
-            }
-        }
-
-    };
-
-
-    let shapes = [];
-
-    window.addEventListener('load', initialize);
-
+//    var oshapes = [];
+    var shapes = [];
+    window.addEventListener("click", initialize);
 }
+
+
