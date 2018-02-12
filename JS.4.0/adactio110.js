@@ -5,8 +5,6 @@
  * adactio110.js
  */
 
-let initialize = function () {
-
 let create_canvas = function () {
 
     var i = document.getElementById("room").style.width;
@@ -21,8 +19,8 @@ let create_canvas = function () {
 
         document.getElementById("toolbox").style.width = 400 + "px";
         document.getElementById("toolbox").style.height = 400 + "px";
-
     }
+
 
 
     let mycv = Object.create(Canvas);
@@ -36,7 +34,7 @@ let create_canvas = function () {
     repeater(mycv, shapes);
 
 
-}
+
     /*
     let canvas = $('toolbox');
     var ctx = canvas.getContext('2d');
@@ -63,4 +61,3 @@ let create_canvas = function () {
 };
 
 
-window.addEventListener('load', initialize);
